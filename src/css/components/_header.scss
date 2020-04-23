@@ -1,0 +1,26 @@
+.header {
+  border-bottom: 1px solid $gray-lighter;
+  .container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    width: 120px;
+  }
+  &__menu {
+    margin-left: auto;
+    li {
+      display: inline-block;
+      margin-right: 43px;
+      padding: 18px 0;
+      &:last-child {
+        border-left: 1px solid $gray-lighter;
+        padding-left: 43px;
+      }
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
