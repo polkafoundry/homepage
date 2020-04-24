@@ -1,0 +1,48 @@
+.font-small {
+  font-size: 13px;
+}
+
+.btn {
+  background-color: $primary;
+  padding: 12px 40px;
+  border-radius: 35px;
+  font-size: 13px;
+  font-weight: 900;
+  color: #fff;
+  display: inline-block;
+  border: none;
+  transition: 0.4s;
+  text-transform: uppercase;
+  img {
+    width: 21px;
+    margin-right: 3px;
+    vertical-align: bottom;
+  }
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: $primary-hover;
+  }
+  &-info {
+    background-color: $sky;
+    &:hover {
+      background-color: $sky-dark;
+    }
+  }
+}
+
+section {
+  padding: 60px 0;
+  .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: $dark;
+    margin-bottom: 40px;
+  }
+  .subtitle {
+    text-align: center;
+    margin-top: -35px;
+    margin-bottom: 40px;
+  }
+}

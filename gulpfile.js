@@ -11,6 +11,12 @@ function html() {
     .pipe(livereload());
 }
 
+function js() {
+  return src(["src/js/*.js"])
+    .pipe(dest("public/js"))
+    .pipe(livereload());
+}
+
 function css() {
   return src(["src/css/app.scss"])
     .pipe(sass.sync({ outputStyle: "compressed" }).on("error", sass.logError))
@@ -23,6 +29,7 @@ exports.watch = function () {
   livereload.listen();
   watch(["src/*.html", "src/**/*.html"], html);
   watch("src/**/*.scss", css);
+  watch("src/**/*.js", js);
 };
 
-exports.build = series(html, css);
+exports.build = series(html, css, js);
