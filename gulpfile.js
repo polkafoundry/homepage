@@ -7,13 +7,13 @@ const template = require("gulp-template-html");
 function html() {
   return src(["src/*.html"])
     .pipe(template("src/templates/template.html"))
-    .pipe(dest("public/"))
+    .pipe(dest("docs/"))
     .pipe(livereload());
 }
 
 function js() {
   return src(["src/js/*.js"])
-    .pipe(dest("public/js"))
+    .pipe(dest("docs/js"))
     .pipe(livereload());
 }
 
@@ -21,7 +21,7 @@ function css() {
   return src(["src/css/app.scss"])
     .pipe(sass.sync({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(rename({ extname: ".min.css" }))
-    .pipe(dest("public/css"))
+    .pipe(dest("docs/css"))
     .pipe(livereload());
 }
 
