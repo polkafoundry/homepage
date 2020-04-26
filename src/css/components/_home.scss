@@ -9,9 +9,15 @@ body {
       background-position: top;
     }
     .header {
-      color: $white;
+      .nav-link {
+        color: $white;
+        &:hover,
+        &.active {
+          color: $white;
+        }
+      }
       border-color: rgba(233, 233, 233, 0.18);
-      .header__menu li:last-child {
+      .nav-item:last-child {
         border-color: rgba(233, 233, 233, 0.18);
       }
     }
@@ -31,21 +37,24 @@ body {
   &__banner {
     margin-bottom: 220px;
   }
-  &__gradient{
+  &__gradient {
     background-image: linear-gradient(to top, #00306b, #005172);
-    p{
+    p {
       color: rgba(255, 255, 255, 0.7);
     }
   }
-  .partner{
+  .partner {
     > div {
       padding-top: 26px;
       padding-bottom: 26px;
       transition: 0.3s;
       filter: grayscale(100%);
-      &:hover{
+      &:hover {
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.06);
         filter: grayscale(0%);
+      }
+      img {
+        max-height: 50px;
       }
     }
   }
