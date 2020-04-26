@@ -2,6 +2,20 @@
   font-size: 13px;
 }
 
+.font-xs {
+  font-size: 11px;
+}
+
+.font-item-title{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.semi-b{
+  font-weight: 600!important;
+}
+
 .btn {
   background-color: $primary;
   padding: 12px 40px;
@@ -10,7 +24,7 @@
   font-weight: 900;
   color: #fff;
   display: inline-block;
-  border: none;
+  border: 1px solid $primary;
   transition: 0.4s;
   text-transform: uppercase;
   img {
@@ -25,9 +39,21 @@
   }
   &-info {
     background-color: $sky;
+    border-color: $sky;
     &:hover {
       background-color: $sky-dark;
     }
+  }
+  &-transparent {
+    background-color: transparent;
+    border-color: $white;
+  }
+  &-fix-w{
+    width: 200px;
+  }
+  &-2-line{
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
 }
 

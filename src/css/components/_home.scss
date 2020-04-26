@@ -1,0 +1,52 @@
+body {
+  &.homepage {
+    background-image: url(../images/home/bgr.png);
+    background-repeat: no-repeat;
+    background-size: auto 680px;
+    background-position: top right 40%;
+    @media screen and (min-width: $breakpoint-xl) {
+      background-size: 100% 680px;
+      background-position: top;
+    }
+    .header {
+      color: $white;
+      border-color: rgba(233, 233, 233, 0.18);
+      .header__menu li:last-child {
+        border-color: rgba(233, 233, 233, 0.18);
+      }
+    }
+  }
+}
+.home {
+  &__title {
+    color: $white;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1.08;
+    strong {
+      font-weight: 700;
+      display: block;
+    }
+  }
+  &__banner {
+    margin-bottom: 220px;
+  }
+  &__gradient{
+    background-image: linear-gradient(to top, #00306b, #005172);
+    p{
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .partner{
+    > div {
+      padding-top: 26px;
+      padding-bottom: 26px;
+      transition: 0.3s;
+      filter: grayscale(100%);
+      &:hover{
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.06);
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
