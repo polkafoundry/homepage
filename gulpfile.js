@@ -3,10 +3,12 @@ const sass = require("gulp-sass");
 const livereload = require("gulp-livereload");
 const rename = require("gulp-rename");
 const template = require("gulp-template-html");
+const htmlmin = require('gulp-htmlmin');
 
 function html() {
   return src(["src/*.html"])
     .pipe(template("src/templates/template.html"))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest("docs/"))
     .pipe(livereload());
 }
