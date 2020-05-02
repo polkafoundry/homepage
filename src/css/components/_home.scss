@@ -1,12 +1,12 @@
 body {
   &.homepage {
-    background-image: url(../images/home/bgr.png);
-    background-repeat: no-repeat;
-    background-size: auto 680px;
-    background-position: top right 40%;
-    @media screen and (min-width: $breakpoint-xl) {
-      background-size: 100% 680px;
-      background-position: top;
+    .banner-wrapper{
+      background-image: url(../images/home/bgr.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top right 50%;
+      min-height: 680px;
+      height: 100vh;
     }
     .header {
       .nav-link {
@@ -26,17 +26,26 @@ body {
 .home {
   &__title {
     color: $white;
-    font-size: 60px;
     font-weight: 200;
     line-height: 1.08;
+    font-size: 35px;
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 60px;
+    }
     strong {
       font-weight: 700;
       display: block;
     }
   }
   &__banner {
-    margin-bottom: 220px;
-    padding-top: 100px;
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    @media screen and (min-width: $breakpoint-sm) {
+      text-align: left;
+    }
   }
   &__gradient {
     background-image: linear-gradient(to top, #00306b, #005172);
