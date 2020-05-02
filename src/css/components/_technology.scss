@@ -1,0 +1,17 @@
+.technology {
+  .banner {
+    background-image: linear-gradient(to bottom, #15b7dd, #00416d);
+    color: $white;
+    .container {
+      background-image: url(../images/technology/1.png);
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: 96%;
+      background-position: top -43px right -40px;
+      font-size: 50px;
+      font-weight: 700;
+      padding-top: 150px;
+      line-height: 55px;
+    }
+  }
+}
