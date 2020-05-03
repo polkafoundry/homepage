@@ -32,9 +32,8 @@
   transition: 0.4s;
   text-transform: uppercase;
   img {
-    width: 21px;
+    height: 13px;
     margin-right: 3px;
-    vertical-align: bottom;
   }
   &:hover {
     color: #fff;
@@ -48,12 +47,22 @@
       background-color: $sky-dark;
     }
   }
+  &-success {
+    background-color: $green;
+    border-color: $green;
+    &:hover {
+      background-color: $green-dark;
+    }
+  }
   &-transparent {
     background-color: transparent;
     border-color: $white;
   }
   &-fix-w{
     width: 200px;
+  }
+  &--fater{
+    padding: 15px 40px;
   }
   &-2-line{
     padding-top: 6px;
@@ -69,6 +78,9 @@ section {
     font-weight: 700;
     color: $dark;
     margin-bottom: 40px;
+    &.left{
+      text-align: left;
+    }
   }
   .subtitle {
     text-align: center;

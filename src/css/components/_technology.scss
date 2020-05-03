@@ -1,17 +1,56 @@
 .technology {
-  .banner {
+  &__banner {
     background-image: linear-gradient(to bottom, #15b7dd, #00416d);
     color: $white;
     .container {
       background-image: url(../images/technology/1.png);
       height: 500px;
       background-repeat: no-repeat;
-      background-size: 96%;
-      background-position: top -43px right -40px;
+      background-size: 80%;
+      background-position: bottom right;
+      padding-top: 50px;
       font-size: 50px;
       font-weight: 700;
-      padding-top: 150px;
       line-height: 55px;
+      @media screen and (min-width: $breakpoint-lg) {
+        padding-top: 150px;
+        background-size: cover;
+        background-position: top -43px right -40px;
+      }
+    }
+  }
+  &__content{
+    .title{
+      font-size: 35px;
+    }
+  }
+  &__list{
+    li{
+      border-top: 1px solid $gray-lighter;
+      &:last-child{
+        border-bottom: 1px solid $gray-lighter;
+      }
+    }
+    &-content{
+      font-size: 13px;
+      padding: 7px 10px 7px 40px;
+      background-image: url(../images/technology/plus.svg);
+      background-repeat: no-repeat;
+      background-size: 15px;
+      background-position: left top 10px;
+      &.active{
+        background-image: url(../images/technology/minus.svg);
+        .technology__list-title{
+          color: $sky;
+        }
+      }
+    }
+    &-title{
+      font-size: 16px;
+      color: $dark;
+      font-weight: 700;
+      margin-bottom: 7px;
+      cursor: pointer;
     }
   }
 }
