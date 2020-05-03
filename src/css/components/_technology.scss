@@ -34,12 +34,12 @@
     &-content{
       font-size: 13px;
       padding: 7px 10px 7px 40px;
-      background-image: url(../images/technology/plus.svg);
+      background-image: url(../images/technology/show.svg);
       background-repeat: no-repeat;
       background-size: 15px;
       background-position: left top 10px;
       &.active{
-        background-image: url(../images/technology/minus.svg);
+        background-image: url(../images/technology/hide.svg);
         .technology__list-title{
           color: $sky;
         }
