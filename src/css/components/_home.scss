@@ -53,6 +53,82 @@ body {
       color: rgba(255, 255, 255, 0.7);
     }
   }
+  &__box{
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: top 50px center;
+    padding: 110px 20px 50px;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover{
+      background-color: #fff;
+      color: $dark;
+      .home__box-text{
+        opacity: 1;
+      }
+    }
+    &.wallet{
+      background-image: url(../images/home/wallet1.svg);
+      &:hover{
+        background-image: url(../images/home/wallet2.svg);
+      }
+    }
+    &.agronomy{
+      background-image: url(../images/home/agronomy1.svg);
+      &:hover{
+        background-image: url(../images/home/agronomy2.svg);
+      }
+    }
+    &.auction{
+      background-image: url(../images/home/auction1.svg);
+      &:hover{
+        background-image: url(../images/home/auction2.svg);
+      }
+    }
+    &.game{
+      background-image: url(../images/home/game1.svg);
+      &:hover{
+        background-image: url(../images/home/game2.svg);
+      }
+    }
+    &.membership{
+      background-image: url(../images/home/membership1.svg);
+      &:hover{
+        background-image: url(../images/home/membership2.svg);
+      }
+    }
+    &.realestate{
+      background-image: url(../images/home/realestate1.svg);
+      &:hover{
+        background-image: url(../images/home/realestate2.svg);
+      }
+    }
+    &.healthcare{
+      background-image: url(../images/home/healthcare1.svg);
+      &:hover{
+        background-image: url(../images/home/healthcare2.svg);
+      }
+    }
+    &.network{
+      background-image: url(../images/home/network1.svg);
+      &:hover{
+        background-image: url(../images/home/network2.svg);
+      }
+    }
+    &-title{
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    &-text{
+      font-size: 15px;
+      opacity: 0.6;
+      line-height: 25px;
+    }
+  }
   .partner {
     > div {
       padding-top: 26px;
