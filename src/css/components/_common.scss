@@ -88,3 +88,12 @@ section {
     margin-bottom: 40px;
   }
 }
+
+.swiper{
+  &-prev, &-next{
+    cursor: pointer;
+  }
+  &-button-disabled{
+    opacity: 0.4;
+  }
+}

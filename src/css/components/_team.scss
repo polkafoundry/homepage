@@ -30,5 +30,12 @@
         font-weight: 600;
       }
     }
+    img{
+      filter: grayscale(100%);
+      transition: 0.3s;
+      &:hover{
+        filter: grayscale(0%);
+      }
+    }
   }
 }
