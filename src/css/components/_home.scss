@@ -38,6 +38,7 @@ body {
     }
   }
   &__banner {
+    position: relative;
     height: calc(100% - 60px);
     display: flex;
     flex-direction: column;
@@ -45,6 +46,19 @@ body {
     text-align: center;
     @media screen and (min-width: $breakpoint-sm) {
       text-align: left;
+    }
+  }
+  &__notification {
+    position: absolute;
+    top: 0;
+    color: #8aacbc;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 11px 0;
+    background-color: #003054;
+    a {
+      text-decoration: underline;
     }
   }
   &__gradient {
