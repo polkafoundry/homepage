@@ -1,17 +1,20 @@
 {
-  "name": "html-init",
+  "name": "homepage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "gulp watch",
+    "watch": "gulp watch",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huy23121994/html-init.git"
   },
-  "author": "baohuybaohuy",
-  "license": "ISC",
+  "author": "TradaTech",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/huy23121994/html-init/issues"
   },

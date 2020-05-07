@@ -27,11 +27,19 @@ function css() {
     .pipe(livereload());
 }
 
+function copy() {
+  return src(["src/static/**/*"])
+    .pipe(dest("docs/"))
+    .pipe(livereload());
+}
+
 exports.watch = function () {
   livereload.listen();
+  exports.build();
   watch(["src/*.html", "src/**/*.html"], html);
   watch("src/**/*.scss", css);
   watch("src/**/*.js", js);
+  watch("src/static/**/*", copy)
 };
 
-exports.build = series(html, css, js);
+exports.build = series(html, css, js, copy);
