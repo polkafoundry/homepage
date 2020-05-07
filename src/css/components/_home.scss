@@ -20,6 +20,9 @@ body {
       .nav-item:last-child {
         border-color: rgba(233, 233, 233, 0.18);
       }
+      .text-info:hover{
+        color: #50dcff !important;
+      }
     }
   }
 }
@@ -38,7 +41,10 @@ body {
     }
   }
   &__headline {
-    font-size: 1.2em;
+    font-size: 15px;
+    font-family: $font-poppins;
+    font-weight: 400;
+    line-height: 1.8;
   }
   &__banner {
     position: relative;
@@ -84,6 +90,7 @@ body {
     border: 0.5px solid rgba(255, 255, 255, 0.1);
     background-color: transparent;
     transition: 0.2s;
+    height: 100%;
     cursor: pointer;
     &:hover{
       background-color: #fff;
@@ -164,6 +171,14 @@ body {
       img {
         max-height: 50px;
       }
+    }
+  }
+  &__media{
+    &-img{
+      display: block;
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 }
