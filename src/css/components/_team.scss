@@ -39,23 +39,11 @@
       line-height: 3;
     }
   }
-  &__list > div {
-    &:last-child {
-      font-size: 35px;
-      font-weight: 700;
-      padding: 40px 22px;
-      line-height: 40px;
-      .plus {
-        font-size: 50px;
-        font-weight: 500;
-        margin-bottom: 10px;
-      }
-      a{
-        font-size: 20px;
-        font-weight: 600;
-      }
-    }
-    img{
+  &__list > a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    img {
       filter: grayscale(100%);
       transition: 0.3s;
       &:hover{
