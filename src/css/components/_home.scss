@@ -54,18 +54,19 @@ body {
   &__notification {
     position: absolute;
     top: 0;
-    color: #c4d5dd;
+    color: #c4c4c4;
     left: 0;
     text-align: center;
     width: 100%;
     padding: 11px 0;
-    background-color: #003054;
+    background-color: rgba(21,183,221,0.15);
     font-size: 1.2em;
     a {
-      color: #eef3f5;
+      color: #ffffff;
+      font-weight: bold;
     }
     a:hover {
-      color: #fff;
+      text-decoration: underline;
     }
   }
   &__gradient {
