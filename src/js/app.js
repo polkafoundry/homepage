@@ -6,16 +6,24 @@ $(document).ready(function () {
     $(this).parent().removeClass('active');
   })
 
-  setInterval(() => {
+  setTimeout(() => {
     updateText();
   }, 3000);
 
   var updateText = (function () {
     var texts = ['Practical', 'Efficient', 'Frictionless'];
-    var index = 1;
+    var timeout = 3000
+    var index = 0;
     return function () {
-      $('.home__title span').text(texts[index++]);
-      index = index == texts.length ? 0 : index
+      var i = ++index % texts.length
+      const text = texts[i]+ ' Blockchain'
+      $('.home__title span').fadeOut(function() {
+        $(this).text(text).fadeIn()
+      })
+
+      var round = Math.floor(index / texts.length)
+      timeout = Math.min(Math.floor(3000 * (1 + round / 2)), 6000)
+      setTimeout(updateText, timeout)
     }
   })();
 

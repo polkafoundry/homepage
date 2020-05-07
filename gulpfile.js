@@ -35,7 +35,6 @@ function copy() {
 
 exports.watch = function () {
   livereload.listen();
-  exports.build();
   watch(["src/*.html", "src/**/*.html"], html);
   watch("src/**/*.scss", css);
   watch("src/**/*.js", js);
