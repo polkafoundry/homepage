@@ -37,6 +37,9 @@ body {
       display: block;
     }
   }
+  &__headline {
+    font-size: 1.2em;
+  }
   &__banner {
     position: relative;
     height: calc(100% - 60px);
@@ -51,14 +54,18 @@ body {
   &__notification {
     position: absolute;
     top: 0;
-    color: #8aacbc;
+    color: #c4d5dd;
     left: 0;
     text-align: center;
     width: 100%;
     padding: 11px 0;
     background-color: #003054;
+    font-size: 1.2em;
     a {
-      text-decoration: underline;
+      color: #eef3f5;
+    }
+    a:hover {
+      color: #fff;
     }
   }
   &__gradient {
