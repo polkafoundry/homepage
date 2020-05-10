@@ -6,12 +6,20 @@
       background-image: url(../images/team/1.png);
       height: 500px;
       background-repeat: no-repeat;
-      background-size: 96%;
-      background-position: top -43px right;
-      font-size: 50px;
+      background-size: 130%;
+      background-position: bottom right;
       font-weight: 700;
-      padding-top: 122px;
-      line-height: 55px;
+      padding-top: 50px;
+      line-height: 45px;
+      font-size: 35px;
+      @media screen and (min-width: $breakpoint-lg) {
+        padding-top: 150px;
+        padding-top: 122px;
+        line-height: 55px;
+        font-size: 50px;
+        background-size: 96%;
+        background-position: top -43px right;
+      }
     }
   }
   &__quote {

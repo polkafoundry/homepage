@@ -12,12 +12,12 @@
   <!-- /build:bgr -->
 
   <!-- build:closebgr -->
+  <div class="home__notification">LoveLock has just released beta 3.1
+    <a href="https://lovelock.one">CHECK IT OUT
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
   <div class="home__banner">
-    <div class="home__notification">LoveLock has just released beta 3.1
-      <a href="https://lovelock.one">CHECK IT OUT
-        <i class="fa fa-arrow-right"></i>
-      </a>
-    </div>
     <div class="container">
       <h2 class="home__title animated fadeInUp">
         <strong>
@@ -33,11 +33,13 @@
             UX at scale.</div>
           <div class="mt-5">
             <button class="btn btn-info text-center btn-fix-w btn-2-line mx-2 mt-3" data-toggle="modal"
-              data-target="#exampleModal">
+              data-target="#myModal">
+              <i class="fa fa-play-circle mr-1"></i>
               WATCH VIDEO
             </button>
             <button class="btn btn-transparent text-center btn-fix-w btn-2-line mx-2 mt-3"
               onclick="scrollToAnchor('#distinctive')">
+              <i class="fa fa-angle-double-down mr-1"></i>
               LEARN MORE
             </button>
           </div>
@@ -48,12 +50,12 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" data-video="https://www.youtube.com/embed/KB6xKsy17BM?autoplay=1">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe width="100%" height="" src="https://www.youtube.com/embed/4fRxd2PJQxY" frameborder="0"
+          <iframe width="100%" height="" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
