@@ -6,37 +6,36 @@
       background-image: url(../images/team/1.png);
       height: 500px;
       background-repeat: no-repeat;
-      background-size: 96%;
-      background-position: top -43px right;
-      font-size: 50px;
+      background-size: 130%;
+      background-position: bottom right;
       font-weight: 700;
-      padding-top: 122px;
-      line-height: 55px;
+      padding-top: 50px;
+      line-height: 45px;
+      font-size: 35px;
+      @media screen and (min-width: $breakpoint-lg) {
+        padding-top: 150px;
+        padding-top: 122px;
+        line-height: 55px;
+        font-size: 50px;
+        background-size: 96%;
+        background-position: top -43px right;
+      }
     }
   }
   &__quote {
     blockquote {
-      font-weight: 100;
-      font-size: 2rem;
-      max-width: 600px;
-      line-height: 1.4;
       position: relative;
-      margin: 0;
-      padding: .5rem;
+      font-size: 1.8rem;
+      line-height: 1.4;
+      font-weight: 300;
     }
     blockquote:before {
       position: absolute;
       color: #f1efe6;
       font-size: 8rem;
-      width: 4rem;
-      height: 4rem;
       content: '“';
-      left: -3rem;
-      top: -2rem;
-    }
-    cite {
-      font-size: 1.4em;
-      line-height: 3;
+      left: -4rem;
+      top: -4rem;
     }
   }
   &__list > a {
