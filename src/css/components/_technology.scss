@@ -20,6 +20,9 @@
         background-position: top -43px right -40px;
       }
     }
+    .title {
+      max-width: 520px;
+    }
   }
   &__content{
     .title{
@@ -39,7 +42,7 @@
       background-image: url(../images/technology/show.svg);
       background-repeat: no-repeat;
       background-size: 15px;
-      background-position: left top 10px;
+      background-position: left top 12px;
       &.active{
         background-image: url(../images/technology/hide.svg);
         .technology__list-title{

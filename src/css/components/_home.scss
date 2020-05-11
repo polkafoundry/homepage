@@ -33,8 +33,8 @@ body {
   &__title {
     color: $white;
     font-weight: 200;
-    line-height: 1.08;
-    font-size: 35px;
+    line-height: 1.28;
+    font-size: 31px;
     @media screen and (min-width: $breakpoint-md) {
       font-size: 60px;
     }
