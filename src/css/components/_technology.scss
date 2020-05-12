@@ -6,12 +6,15 @@
       background-image: url(../images/technology/1.png);
       height: 500px;
       background-repeat: no-repeat;
-      background-size: 600px;
+      background-size: 120%;
       background-position: bottom right;
       padding-top: 50px;
       line-height: 45px;
       font-size: 35px;
       font-weight: 700;
+      @media screen and (min-width: $breakpoint-sm) {
+        background-size: 600px;
+      }
       @media screen and (min-width: $breakpoint-lg) {
         padding-top: 150px;
         line-height: 55px;
