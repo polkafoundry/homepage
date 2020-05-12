@@ -8,10 +8,13 @@
     background-size: 40px;
     background-position: top 80px center;
     background-repeat: no-repeat;
+    display: block;
     cursor: pointer;
     &:hover {
       transition: 0.3s;
       box-shadow: 10px 15px 40px 0 rgba(0, 0, 0, 0.04);
+      text-decoration: none;
+      color: inherit;
     }
     &::after{
       content: '';

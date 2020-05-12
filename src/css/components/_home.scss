@@ -66,13 +66,20 @@ body {
     text-align: center;
     padding: 11px 15px;
     background-color: rgba(21,183,221,0.15);
-    font-size: 1.2em;
+    font-size: 0.9em;
     a {
       color: #ffffff;
+      display: block;
       font-weight: bold;
     }
     a:hover {
       text-decoration: underline;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+      font-size: 1.2em;
+      a{
+        display: inline;
+      }
     }
   }
   &__gradient {
