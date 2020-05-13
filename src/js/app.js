@@ -32,9 +32,9 @@ $(document).ready(function () {
       success: function (data) {
         var $error = $this.find('.error');
         if (data.result != "success") {
-          $error.addClass('text-danger').removeClass('text-success').text('Something went wrong! Try again later.');
+          $error.addClass('text-danger').removeClass('text-success').text('Something went wrong, please try again later.');
         } else {
-          $error.addClass('text-success').removeClass('text-danger').text('Thank you for subscribing!');
+          $error.addClass('text-success').removeClass('text-danger').text('Thank you for subscribing.');
         }
       }
     });

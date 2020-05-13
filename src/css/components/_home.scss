@@ -189,3 +189,12 @@ body {
     }
   }
 }
+
+#myModal .modal-dialog {
+  max-width: 899px;
+  margin: 0 auto;
+}
+
+.modal-backdrop.show {
+  opacity: 0.85;
+}
