@@ -25,17 +25,25 @@
   &__quote {
     blockquote {
       position: relative;
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       line-height: 1.4;
       font-weight: 300;
-    }
-    blockquote:before {
-      position: absolute;
-      color: #f1efe6;
-      font-size: 8rem;
-      content: '“';
-      left: -4rem;
-      top: -4rem;
+      &::before{
+        position: absolute;
+        color: #f1efe6;
+        font-size: 12rem;
+        content: '“';
+        left: -1rem;
+        top: -7.5rem;
+      }
+      @media screen and (min-width: $breakpoint-lg) {
+        font-size: 1.8rem;
+        &::before{
+          font-size: 8rem;
+          left: -4rem;
+          top: -4rem;
+        }
+      }
     }
   }
   &__list > a {

@@ -32,9 +32,9 @@ $(document).ready(function () {
       success: function (data) {
         var $error = $this.find('.error');
         if (data.result != "success") {
-          $error.addClass('text-danger').removeClass('text-success').text(data.msg)
+          $error.addClass('text-danger').removeClass('text-success').text('Something went wrong, please try again later.');
         } else {
-          $error.addClass('text-success').removeClass('text-danger').text('Success!')
+          $error.addClass('text-success').removeClass('text-danger').text('Thank you for subscribing.');
         }
       }
     });
@@ -51,7 +51,7 @@ $(document).ready(function () {
       },
       play: function () {
         var i = ++index % texts.length
-        const text = texts[i] + ' Blockchain'
+        var text = texts[i] + ' Blockchain'
 
         var round = Math.floor(index / texts.length)
         timeout = Math.min(Math.floor(3000 * (1 + round / 2)), 6000)

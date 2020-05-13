@@ -12,6 +12,9 @@
       line-height: 45px;
       font-size: 35px;
       font-weight: 700;
+      @media screen and (min-width: $breakpoint-sm) {
+        background-size: 600px;
+      }
       @media screen and (min-width: $breakpoint-lg) {
         padding-top: 150px;
         line-height: 55px;
@@ -19,6 +22,9 @@
         background-size: cover;
         background-position: top -43px right -40px;
       }
+    }
+    .title {
+      max-width: 520px;
     }
   }
   &__content{
@@ -34,12 +40,12 @@
       }
     }
     &-content{
-      font-size: 13px;
+      font-size: 15px;
       padding: 7px 10px 7px 40px;
       background-image: url(../images/technology/show.svg);
       background-repeat: no-repeat;
       background-size: 15px;
-      background-position: left top 10px;
+      background-position: left top 12px;
       &.active{
         background-image: url(../images/technology/hide.svg);
         .technology__list-title{
