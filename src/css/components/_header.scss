@@ -22,7 +22,7 @@
     &-item {
       margin-left: 20px;
       @media screen and (min-width: $breakpoint-lg) {
-        width: 100px;
+        /* width: 100px; */
       }
       &:last-child {
         a {
