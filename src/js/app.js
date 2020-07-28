@@ -51,13 +51,13 @@ $(document).ready(function () {
       },
       play: function () {
         var i = ++index % texts.length
-        var text = texts[i] + ' Blockchain'
+        var text = texts[i]
 
         var round = Math.floor(index / texts.length)
-        timeout = Math.min(Math.floor(3000 * (1 + round / 2)), 6000)
+        timeout = Math.min(Math.floor(3000 * (1 + round / 2)), 2000)
         timeoutFunc = setTimeout(function () {
           updateText.play();
-          $('.home__title span').fadeOut(function () {
+          $('.change-text').fadeOut(function () {
             $(this).text(text).fadeIn()
           })
         }, timeout)
