@@ -41,7 +41,21 @@ body {
     strong {
       font-weight: 700;
       display: block;
+      width: 100%;
     }
+    span.change-text{
+      width: 30%;
+      display: inline-block;
+      float: left;
+      text-align: right;
+      color: red;
+      font-weight: lighter;
+    }
+    span.text{
+      width: 70%;
+      float: left;
+      padding-left: 11px;
+  }
   }
   &__headline {
     font-size: 1.2em;
