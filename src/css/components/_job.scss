@@ -1,0 +1,44 @@
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@100&display=swap');
+
+.job-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #131313;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.job-salary{
+    font-size: 13px;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+}
+.job{
+    padding: 20px 20px;
+    border-top: 1px solid #00000030;
+    height: 128px;
+    position: relative;
+}
+.job:hover{
+    background: #e8f8fc;
+}
+.job-time{
+    padding-top: 5px;
+}
+.time{
+    color: #15B5DD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+
+}
+.posted{
+    color: #999999;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    padding-left: 5px;
+    line-height: 22px;
+}
+.icon{
+    position: absolute;
+    right: 10px;
+    top: 41%;
+}
