@@ -23,7 +23,7 @@ $(document).ready(function () {
     e.preventDefault();
     var url = $this.attr('action');
     $.ajax({
-      type: "GET", 
+      type: "GET",
       url: url,
       data: $this.serialize(),
       dataType: 'json',
@@ -40,33 +40,18 @@ $(document).ready(function () {
     });
   })
 
-  var updateText = (function () {
-    var texts = ['Practical', 'Efficient', 'Frictionless'];
-    var timeout = 1000;
-    var index = 0;
-    var timeoutFunc = null;
-    return {
-      stop: function () {
-        clearTimeout(timeoutFunc);
-      },
-      play: function () {
-        var i = ++index % texts.length
-        var text = texts[i]
+  var myVar = setInterval(myTimer, 1000);
+  var words = ['Practical', 'Efficient', 'Frictionless']
+  var i = 0;
 
-        var round = Math.floor(index / texts.length)
-        timeout = Math.min(Math.floor(3000 * (1 + round / 2)), 2000)
-        timeoutFunc = setTimeout(function () {
-          updateText.play();
-          $('.change-text').fadeOut(function () {
-            $(this).text(text).fadeIn()
-          })
-        }, timeout)
-      }
+  function myTimer() {
+    document.getElementById("change-text").innerHTML = words[i];
+    if (i < words.length - 1) {
+      i = i + 1;
+    } else {
+      i = 0;
     }
-  })();
-
-  updateText.play();
-
+  }
 
   new Swiper('.swiper-container', {
     navigation: {
