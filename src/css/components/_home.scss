@@ -40,21 +40,35 @@ body {
     }
     strong {
       font-weight: 700;
-      display: block;
+      display: flex;
       width: 100%;
+      justify-content: flex-end;
     }
     span.change-text{
       width: 30%;
-      display: inline-block;
-      float: left;
       text-align: right;
       color: red;
       font-weight: lighter;
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 50%;
+      }
+      @media (min-width: $breakpoint-sm)and (max-width: $breakpoint-md) {
+        width: 40%;
+      }
+      @media screen and (max-width: $breakpoint-lg) {
+        width: 50%;
+      }
     }
     span.text{
       width: 70%;
-      float: left;
+      text-align: left !important;
       padding-left: 11px;
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 50%;
+      }
+      @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+        width: 50%;
+      }
   }
   }
   &__headline {
